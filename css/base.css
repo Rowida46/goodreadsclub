@@ -1,7 +1,8 @@
 /* Start Variables */
 :root {
   --main-color: #19c8fa;
-  --transparent-color: rgb(15 116 143 / 70%);
+  --transparent-color: #2e354f;
+  /* rgb(15 116 143 / 70%); */
   --section-padding: 100px;
 }
 /* End Variables */
@@ -12,6 +13,19 @@
   box-sizing: border-box;
 }
 
+.special-heading{
+  font-family: cursive;
+  color: #191970;
+  text-align: initial;
+  color: white;
+  font-size: 30px;
+}
+.special-heading + p {
+  font-family: cursive;
+  margin: 10px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
 h1{
   text-align: center;
 }
@@ -21,8 +35,8 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
   background-color: black;
-}
 
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -94,6 +108,8 @@ header nav .toggle-menu {
 }
 
 header nav ul{
+  font-family: cursive;
+  font-size: 30px;
   display: flex;
 }
 header nav ul li{
@@ -128,29 +144,19 @@ header nav ul li a:hover {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
-header nav form {
-  width: 40px;
-  height: 30px;
-  position: relative;
-  margin-left: 30px;
-  border-left: 1px solid white;
-}
-header nav form i {
-  color: white;
-  position: absolute;
-  font-size: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-}
+
 /* End Header */
 /* Start Landing */
 .landing {
   min-height: 100vh;
-  background-color: #1f2021;
-  background-image: url('https://github.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/blob/main/images/landing.jpg?raw=true');
+  /*background-color: #1f2021;*/
+  background-image: url('https://i.pinimg.com/564x/2d/d9/47/2dd94797c27945a77daa3ba49f370fd1.jpg');
+  /*url('https://i.pinimg.com/564x/2c/1f/3b/2c1f3bf8341c0f01959823160a56ce58.jpg');
+  url('https://github.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/blob/main/images/landing.jpg?raw=true');
+  */
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  
 }
 .landing .overlaying{
   position: absolute;
@@ -164,9 +170,10 @@ header nav form i {
 .landing .txt{
   position: absolute;
   left: 200px;
-  top: 55%;
+  top: 60%;
   transform: translateY(-50%);
   width: 50%;
+  height: 50%;
   padding: 50px;
   background-color: var(--transparent-color);
   color: white;

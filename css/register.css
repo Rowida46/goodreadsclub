@@ -2,8 +2,24 @@ body {
   margin: 0;
   color: #6a6f8c;
   background: #c8c8c8;
+  background-image: url('https://i.pinimg.com/564x/2c/1f/3b/2c1f3bf8341c0f01959823160a56ce58.jpg');
   font: 600 16px/18px "Open Sans", sans-serif;
 
+}
+
+.special-heading {
+  font-family: cursive;
+  color: #191970;
+  text-align: initial;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+p {
+  margin: 20px ;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
 }
 *,
 :after,
