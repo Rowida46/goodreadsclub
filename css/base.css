@@ -43,6 +43,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -86,9 +87,7 @@ header .container::after{
   width: calc(100% - 30px);
   left: 15px;
 }
-header .logo img {
-  height: 40px;
-}
+
 header nav {
   flex: 1;
   display: flex;
@@ -149,11 +148,7 @@ header nav ul li a:hover {
 /* Start Landing */
 .landing {
   min-height: 100vh;
-  /*background-color: #1f2021;*/
-  background-image: url('https://i.pinimg.com/564x/2d/d9/47/2dd94797c27945a77daa3ba49f370fd1.jpg');
-  /*url('https://i.pinimg.com/564x/2c/1f/3b/2c1f3bf8341c0f01959823160a56ce58.jpg');
-  url('https://github.com/ElzeroWebSchool/HTML_And_CSS_Template_Two/blob/main/images/landing.jpg?raw=true');
-  */
+  background-image: url('https://i.pinimg.com/564x/2d/d9/47/2dd94797c27945a77daa3ba49f370fd1.jpg');  
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -181,7 +176,6 @@ header nav ul li a:hover {
   justify-content: flex-end;
 }
 
-
 .landing .text .content {
   max-width: 500px;
 }
@@ -194,3 +188,128 @@ header nav ul li a:hover {
   }
 }
 /* End Landing */
+
+/*Start Image Slider*/
+.frame{
+    width: 125vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+img{
+    width: 100%;
+    height: 350px;
+}
+
+/*End Of Img Slider*/
+
+/* Start 5sec animation  */
+.greetingcard{
+    background-color: #e2e2e2;
+    width:550px;
+    height:600px;
+    margin-left:20%;
+    padding:10px;
+    border:20px solid black;
+    text-align: left;
+    background-position: center;
+    background-size: cover;
+    color:black;
+    width:700px;
+    height:500px;
+    box-sizing: ;
+}
+.image {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  z-index: 0;
+  animation-name: boxText;
+  animation-duration: 3s;
+  animation-fill-mode: linear;
+}
+.image img{
+  width: 630px;
+  height: 450px;
+
+}
+button{
+    width:650px;
+    position: relative;
+    margin-left:22%;
+    padding:10px;
+    margin-top:20px;
+}
+textarea{
+    resize: none;
+    width: 65%;
+    height:120px;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.text-area{
+  width: 500px;
+  height: 365px;
+  z-index: 1;
+  position:absolute;
+}
+.textarea1{
+  width: 500px;
+  height: 365px;
+
+  }
+@keyframes boxText{
+   0%{
+      z-index: 2;
+      
+   }
+   90%{
+    z-index: 2;
+   }
+   100%{
+      z-index: 0;
+      
+   }
+}
+
+/* End 5sec animation  */
