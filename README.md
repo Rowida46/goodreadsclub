@@ -2,14 +2,18 @@
 
 ## Project Structure 
 ```bash
-BikeRental/
-|-- BikeRental/
-|   |-- Customer.py
-|   |-- rent.py
+Project1_ITI/
+|-- CustomerTest/
+|   |
+|   |
 |
-|-- test/
-|   |-- CustomerTest
-|   |-- RentTest.py
-|
+|-- src/
+|   |
+|   |
+|-- templates/
+|   |
+|   |
+|  
+|  
 |-- README
 ```
